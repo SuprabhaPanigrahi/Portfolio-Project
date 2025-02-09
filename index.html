@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="my.js"></script>
 </head>
 <body>
   <header class="navbar">
@@ -12,7 +13,8 @@
       <h1>My<span>Portfolio</span></h1>
     </div>
     <nav>
-      <ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -27,9 +29,9 @@
   <section id="home" class="hero-section">
     <div class="content">
       <h1>Hi There, <br> I'm <span>Suprabha Panigrahi</span></h1>
-      <p>I am into <span>Software Development</span></p>
-      <a href="#about" class="btn">About Me ↓</a>
-  
+      <p><span>Aspiring Software Developer | Passionate Learner</span></p>
+      <a href="#about" class="btn">About Me ↓</a>       <a href="SUPRABHA PANIGRHI_CV.pdf" class="btn">Download CV</a>
+
       <!-- Social Media Icons -->
       <div class="social-links">
         <a href="www.linkedin.com/in/suprabha-panigrahi" target="_blank" class="social-link">
@@ -37,6 +39,12 @@
         </a>
         <a href="https://github.com/SuprabhaPanigrahi" target="_blank" class="social-link">
           <img src="github.png" alt="GitHub" class="icon" height="500" width="500">
+        </a>
+        <a href="https://instagram.com/situ3289" target="_blank" class="social-link">
+          <img src="instagram.png" alt="instagram" class="icon" height="500" width="500">
+        </a>
+        <a href="https://telegram.com/SuprabhaPanigrahi" target="_blank" class="social-link">
+          <img src="telegram.png" alt="telegram" class="icon" height="500" width="500">
         </a>
       </div>
     </div>
@@ -52,6 +60,7 @@
     <p>
       Other than this I also have proficiency in C, Java, MySQL
     </p>
+    
   </section>
   <section id="skills" class="skills-section">
     <h2>My Skills</h2>
@@ -134,9 +143,10 @@
       <div class="projects-container">
         <!-- Project 1 -->
         <div class="project-card">
-          <img src="project1-image.jpg" alt="Project 1 Image" class="project-image">
+          <img src="weather project.jpg" alt="Project 1 Image" class="project-image">
           <h3>Weather Prediction Model</h3>
           <p>A weather forecasting application using Google AI and OpenWeatherMap API to provide accurate predictions.</p>
+          <p><h3>Technologies Used :</h3><br>AI and ML</p>
           <a href="https://live-demo-project1.com" target="_blank" class="live-demo-btn">Live Demo</a>
         </div>
         <!-- Project 2 -->
@@ -144,7 +154,8 @@
           <img src="portfolio.png" alt="Project 2 Image" class="project-image">
           <h3>Portfolio Website</h3>
           <p>A responsive portfolio website showcasing my skills, projects, and contact information, built using HTML, CSS, and JavaScript.</p>
-          <a href="https://live-demo-project2.com" target="_blank" class="live-demo-btn">Live Demo</a>
+          <p><h3>Technologies Used :</h3><br>Frontend Web Application(HTML, CSS)</p>
+          <a href="https://github.com/SuprabhaPanigrahi/Portfolio-Project" target="_blank" class="live-demo-btn">Live Demo</a>
         </div>
       </div>
     </section>
@@ -153,22 +164,15 @@
       <h2>Contact Me</h2>
       <div class="contact-details">
         <h3>Get in Touch</h3>
-        <p><strong>Email:</strong> your-email@example.com</p>
-        <p><strong>Phone:</strong> +123 456 7890</p>
-        <p><strong>Location:</strong> Your City, Country</p>
+        <p><strong>Email:</strong>suprabhapanigrahi620@gmail.com</p>
+        <p><strong>Phone:</strong>7735822183</p>
+        <p><strong>Location:</strong>Berhampur, Odisha, India</p>
         <div class="social-icons">
-          <a href="https://github.com/yourgithub" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
-          <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-          <a href="mailto:your-email@example.com"><img src="email-icon.png" alt="Email"></a>
+          <a href="https://github.com/SuprabhaPanigrahi" target="_blank"><img src="github.png" alt="GitHub"></a>
+          <a href="www.linkedin.com/in/suprabha-panigrahi" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
         </div>
+        <p id="end"><h4>© 2024 [Suprabha Panigrahi]. All Rights Reserved</h4></p>
       </div>
     </section>
-    
-    
-  
- 
-  
-  
-  
 </body>
 </html>
