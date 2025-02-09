@@ -396,4 +396,63 @@ p span {
 .social-icons img:hover {
   transform: scale(1.2);
 }
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+.dark-mode a {
+  color: #f0f0f0;
+}
+
+.dark-mode .btn {
+  background-color: #444;
+  color: white;
+}
+
+.dark-mode .btn:hover {
+  background-color: #666;
+}
+
+/* Dark Mode Button */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.theme-toggle:hover {
+  background-color: #555;
+}
+
+/* Scroll-to-Top Button */
+.scroll-top {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none;
+}
+
+.scroll-top:hover {
+  background-color: #0056b3;
+}
 
