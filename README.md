@@ -17,6 +17,7 @@ GitHub Pages for hosting
 🚀 How to Run
 Clone the repository:
 git clone https://github.com/SuprabhaPanigrahi/Portfolio-Project.git
+
 cd Portfolio-Project
 
 Open index.html in a browser.
