@@ -23,6 +23,9 @@ document.body.appendChild(toggleThemeBtn);
 
 toggleThemeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    document.querySelectorAll('section, header, footer').forEach(section => {
+        section.classList.toggle('dark-mode');
+    });
 
     // Save dark mode preference in local storage
     if (document.body.classList.contains('dark-mode')) {
@@ -37,10 +40,13 @@ toggleThemeBtn.addEventListener('click', () => {
 // Load Dark Mode Preference
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
+    document.querySelectorAll('section, header, footer').forEach(section => {
+        section.classList.add('dark-mode');
+    });
     toggleThemeBtn.innerText = "☀️ Light Mode";
 }
 
-// Show Scroll-to-Top Button
+// Scroll-to-Top Button
 const scrollTopBtn = document.createElement('button');
 scrollTopBtn.innerText = "⬆️";
 scrollTopBtn.classList.add('scroll-top');
@@ -56,4 +62,17 @@ window.addEventListener('scroll', () => {
 
 scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Scroll Animations for Sections
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.fade-in, .slide-in-left, .zoom-in').forEach(section => {
+    observer.observe(section);
 });
